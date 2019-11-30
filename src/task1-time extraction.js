@@ -5,6 +5,12 @@
  */
 
 function getTimeParameter(seconds) {
+
+  if(seconds < 0) {
+    alert('Please enter a valid time in Seconds');
+    return;
+  }
+
   let time = new Date(0000, 0, 0, 0, 0, seconds);
 
   let hours = time.getHours(),

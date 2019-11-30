@@ -6,6 +6,12 @@
  */
 
 function sortStrings() {
+
+  if(arguments.length == 0) {
+    alert('Please pass at least one string aurgument to the function');
+    return;
+  }
+
   let localArrayOfStrings = [...arguments];
   let sortedArrayOfStrings = localArrayOfStrings.sort();
 
